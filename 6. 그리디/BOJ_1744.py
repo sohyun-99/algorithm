@@ -15,9 +15,9 @@ for _ in range(n):
     else:
         zero = 1 # 0은 있는지 없는지만 확인
 
-#둘다 앞부터 보면 되도록 정렬 # 편의를 위해 내림차순
+#둘다 앞부터 보면 되도록 정렬
 plus.sort(reverse=True) 
-minus.sort(reverse=True) 
+minus.sort() 
 sum=0
 
 

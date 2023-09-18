@@ -33,3 +33,8 @@ arr=[list(input()) for _ in range(N)]
 ## 입력 빠르게하기
 import sys
 input=sys.stdin.readline # input함수 바꾸기
+
+
+# lstrip: 문자열에 왼쪽 공백이나, 인자가된 문자열의 모든 조합을 제거 
+# rstrip: 문자열에 오른쪽 공백이나, 인자가된 문자열의 모든 조합을 제거
+# strip: 양쪽 문자열에 공백이나, 인자가된 문자열의 모든 조합을 제거 
