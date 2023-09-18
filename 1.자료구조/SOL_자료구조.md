@@ -2,6 +2,7 @@
 
 go
 - stack (후입 선출)
+
 - queue (선입 선출)
 
 wait
