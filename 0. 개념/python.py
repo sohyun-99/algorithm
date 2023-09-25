@@ -2,10 +2,17 @@
 N = int(input())
  
 ### 한줄 정수 리스트 입력받기
-li = [*map(int,input().split())]
+p = list(map(int,input().split()))
  
 ### 여러개 정수 입력받기
 a,b,c = map(int,input().split())
+
+# 한줄에 여러개의 문자열 입력 받기
+a, b = input().split()
+
+## 문자열 여러줄 리스트
+p = [input() for _ in range(a)] # 길이가 정해져있음
+                                # 안정해져있음
 
 n = int(input())
 
