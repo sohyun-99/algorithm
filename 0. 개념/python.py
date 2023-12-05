@@ -45,3 +45,8 @@ input=sys.stdin.readline # input함수 바꾸기
 # lstrip: 문자열에 왼쪽 공백이나, 인자가된 문자열의 모든 조합을 제거 
 # rstrip: 문자열에 오른쪽 공백이나, 인자가된 문자열의 모든 조합을 제거
 # strip: 양쪽 문자열에 공백이나, 인자가된 문자열의 모든 조합을 제거 
+
+
+###
+board=[[]]
+answer = max(map(max,board))**2 # 2차원 배열의 최댓값 찾기
