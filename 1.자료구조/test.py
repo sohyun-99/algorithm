@@ -1,4 +1,4 @@
-from collections import Counter
+_input = "05:30"
+i_h,i_m= _input.split(':')
 
-Counter(["hi", "hey", "hi", "hi", "hello", "hey"])
-print(ConnectionAbortedError)
+print(i_h)
