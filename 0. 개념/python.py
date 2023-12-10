@@ -50,3 +50,10 @@ input=sys.stdin.readline # input함수 바꾸기
 ###
 board=[[]]
 answer = max(map(max,board))**2 # 2차원 배열의 최댓값 찾기
+
+# 인접 리스트의 형태로 데이터 넣기 (dfs 할때 사용한 코드)
+com = [[]*n for _ in range(n+1)]
+for i in range (l):
+    a,b = map(int,input().split())
+    com[a].append(b)
+    com[b].append(a)
