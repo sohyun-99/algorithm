@@ -40,19 +40,27 @@
 # 다른 풀이 참고하니 c를 전역변수로 설정해서 하는 사람도 있음
 
 # # 23/12/14 -> BFS로도 풀어보기 !!!!!!!!!!!!!!!
-from collections import deque
+# from collections import deque
 
-dx = [0,0,1,-1]
-dy = [1,-1,0,0]
+# dx = [0,0,1,-1]
+# dy = [1,-1,0,0]
 
-def bfs(arr,x,y):
-    queue=deque((x,y))
-    # queue.append(
-    print(queue)
+# def bfs(arr,x,y):
+#     queue=deque((x,y))
+#     arr[x][y]=2 # 방문했다는 의미
 
-n = int(input())
-arr=[]
-for i in range(n):
-    arr.append(list(map(int,input())))
+#     while queue : 
+#         x,y = queue.popleft()
+#         for i in range(4):
+#             nx=x+dx[i]
+#             ny=y+dy[i]
+        
+#         if nx<0 or ny<0 or nx>=n or ny>=n :
+#             continue
 
-bfs(arr,1,1)
+#     # 방문한적 없는 집이 있는 곳
+#         if arr[nx][ny]==1 :
+#             arr[nx][ny] = 0
+#             queue.append((nx, ny))
+#             c += 1
+
