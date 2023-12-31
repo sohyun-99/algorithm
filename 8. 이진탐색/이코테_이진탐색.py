@@ -24,3 +24,9 @@ if result == None:
     print("원소가 존재하지 않습니다")
 else:
     print(result+1)
+
+
+# 이진탐색 문제 특징
+    # 입력 데이터가 많거나 탐색 범위가 매우 넓은 편
+    # 1000만개나 1000억 이상의 탐색 범위라면 이진탐색을 의심해보면됨
+    # 단 이때 input()을 사용하면 동작 속도가 느려 시간 초과 오답 판정을 받을 수 있음 => impor sys // sys.stdin.readline().rstrip() // 이용
