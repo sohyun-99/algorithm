@@ -19,7 +19,7 @@ public class BOJ_11720 {
         for ( int i = 0 ; i <cNum.length ; i++){
             // char(문자) 를 정수형으로 변환하여 값을 더해 나감
             sum += cNum[i] - '0';
-            
+        
         }
         System.out.print(sum);
 
