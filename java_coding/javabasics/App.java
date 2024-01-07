@@ -1,4 +1,4 @@
-package ALGORITHM_STUDY.JavaBasics;
+package java_coding.javabasics;
 
 public class App {
     public static void main(String[] args) throws Exception {
