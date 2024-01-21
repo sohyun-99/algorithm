@@ -1,4 +1,4 @@
-package java_coding.data_structure;
+package java_coding.data_structure.basic;
 
 public class summary {
     /* 배열 : 메모리의 연속 공간 

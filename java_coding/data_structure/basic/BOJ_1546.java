@@ -1,4 +1,4 @@
-package java_coding.data_structure;
+package java_coding.data_structure.basic;
 
 import java.util.*;
 import java.io.*;

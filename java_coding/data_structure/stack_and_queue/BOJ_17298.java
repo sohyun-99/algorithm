@@ -67,4 +67,5 @@ public class BOJ_17298 {
 
 //System.out.print를 반복적으로 사용하기 때문에 시간 초과 발생
 // 대량의 출력이 필요한 경우 Buffered Writer를 사용하자
+// 단 bw.write(string형이어야함 위의 경우는 공백을 더했기 때문에 문자열이 된 것)
 
