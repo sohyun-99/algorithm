@@ -1,0 +1,4 @@
+- List와 ArrayList의 차이 ? 
+   - List(linkedlist로도 사용 가능)는 인터페이스이고 ArrayList(빠른 탐색에 유용)는 이 List를 구현한 클래스
+   - https://velog.io/@dnwlsrla40/List-ArrayList-%EB%B0%B0%EC%97%B4-%EC%84%A0%EC%96%B8-%EC%8B%9C-List%EC%99%80-ArrayList-%EC%B0%A8%EC%9D%B4
+   - https://yoon-dailylife.tistory.com/7
