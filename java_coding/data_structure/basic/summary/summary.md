@@ -98,3 +98,11 @@ class Pair implements Comparable<Pair>{
     // Comparable 인터페이스를 구현하는 것은 정렬이나 순서를 지정하는 경우에 필요한 기능
 }
 ```
+
+```java
+// 소수 판별 함수
+ for (int i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i == 0) {
+            return false; // 나누어 떨어지면 소수가 아님
+        }
+```

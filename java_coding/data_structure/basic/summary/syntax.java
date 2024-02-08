@@ -61,6 +61,10 @@ public class syntax {
         // array 배열 자르기
         int[] arr2 = {1,2,3,4,5};
         int[] cut_arr2 =  Arrays.copyOfRange(arr2,2,4); //<-인덱스로 // 결과 (3,4) // 인덱스 2부터 4전까지 
+
+        //초기값을 false로 초기화
+        Boolean arr [] = new arr[10];
+        Arrays.fill(arr,false); 
         
 
         /* set */
