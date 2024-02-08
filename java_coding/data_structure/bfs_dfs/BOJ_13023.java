@@ -24,7 +24,6 @@ public class BOJ_13023 {
             arr[i] = new ArrayList<Integer>();
         }
 
-
         for(int i=0;i<edge;i++){
             st = new StringTokenizer(bf.readLine());
             int a = Integer.parseInt(st.nextToken());
