@@ -25,9 +25,7 @@ public class BOJ_2178 {
         for(int i=0;i<n;i++){
             String a = br.readLine();
 
-            for(int j=0;j<m;j++){
-                arr[i][j] = Integer.parseInt(a.substring(j,j+1));
-            }
+            
 
         }
         
