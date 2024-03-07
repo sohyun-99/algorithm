@@ -12,8 +12,13 @@ public class BOJ_1929 {
         int n = Integer.parseInt(st.nextToken());
 
         int[] mn = new int[m+n+1];
+        // 초기에 모든 값이 0으로 초기화 된 점을 이용해서 딱히 값의 초기화를 해주지 않음
 
 
+        // 나의 풀이 -> 애초에 큰 수 까지 돌려놓고 범위 넘으면 break 걸어둠
+        /* 다른 사람의 풀이 
+        * 애초에 제곱근까지만 수행 가능하도록 함 Math.sprt(N)으로 for문의 범위를 설정
+        */ 
         for(int i=1;i<n+1;i++){
             if(mn[i]!=0) continue;
 
@@ -28,6 +33,9 @@ public class BOJ_1929 {
                 }
             }
         }
+
+        
+        
 
         for(int i=m;i<n+1;i++){
             if(mn[i]==0){
