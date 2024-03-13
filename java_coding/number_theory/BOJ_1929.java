@@ -34,9 +34,6 @@ public class BOJ_1929 {
             }
         }
 
-        
-        
-
         for(int i=m;i<n+1;i++){
             if(mn[i]==0){
                 System.out.println(i);
