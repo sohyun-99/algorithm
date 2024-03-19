@@ -14,9 +14,8 @@ public class BOJ_1016 {
         long max = Long.parseLong(st.nextToken());
         long count = 0;
 
-        // long[] arr = new long[1000001];
         long[] arr = new long[(int)(max - min + 1)];
-        
+
         // arr에 순서대로 min~max 값을 저장
         int j =0;
         for(long i=min;i<=max;i++){
@@ -24,24 +23,9 @@ public class BOJ_1016 {
             j++;
         }
 
-        // for(int i=2 ; i<=Math.sqrt(max);i++){
-
-        //     long k = i*i;
-
-        //     // if(k>=min && k<=max){
-        //     //     if(arr[(int)(k-min)]==0) continue;
-        //     // }
-        //     long start = min/k * k;
-        //     if(start<min) start+=k;
-        //     // if(kk==0) kk=1;
-            
-        //     for(long q=start;q<=max;q=q+k){
-        //         // if(q-min>=0) {
-        //             arr[(int)(q-min)]= 0 ;
-        //         // }
-        //     }
-            
-        // }
+        // Boolean을 사용하여 메모리 효율성 높히는 방법이 더 유용
+        // boolean[] isSquareFree = new boolean[(int) (max - min + 1)];
+        // Arrays.fill(isSquareFree, true);
 
         for(long i=2 ; i<=Math.sqrt(max);i++){
         // for (long i = 2; i*i <= max; i++) {
@@ -50,9 +34,7 @@ public class BOJ_1016 {
             if (start < min) start += k;
 
             for (long q = start; q <= max; q += k) {
-                if (arr[(int)(q - min)] != 0) { // 이미 0으로 설정된 경우를 제외
                     arr[(int)(q - min)] = 0; // 제곱수의 배수를 0으로 설정
-                }
             }
         }
 
