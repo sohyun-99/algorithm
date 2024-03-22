@@ -1,4 +1,4 @@
-package java_coding.data_structure.bfs_dfs;
+package java_coding.bfs_dfs;
 
 import java.io.*;
 import java.util.*;

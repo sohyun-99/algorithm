@@ -1,4 +1,4 @@
-package java_coding.data_structure.basic.summary;
+package java_coding.basic.summary;
 
 import java.io.*;
 import java.util.*;
@@ -63,7 +63,7 @@ public class syntax {
         int[] cut_arr2 =  Arrays.copyOfRange(arr2,2,4); //<-인덱스로 // 결과 (3,4) // 인덱스 2부터 4전까지 
 
         //초기값을 false로 초기화
-        Boolean arr [] = new arr[10];
+        Boolean arr [] = new Boolean[10];
         Arrays.fill(arr,false); 
         
 
@@ -111,9 +111,20 @@ public class syntax {
 
         }
         map2.get("str").add(Integer.parseInt("넣고싶은거"));
+        
+        HashMap<Integer,Integer> map = new HashMap<>();
+        map.put(1,100);
+        map.remove(1);
+        map.get(1);
+    
+        HashSet<Integer> set = new HashSet<>();
+        set.add(1);
+        set.remove(1);
+        set.contains(1); // true or false
+    
     }
 
-
+    
     
 }
 

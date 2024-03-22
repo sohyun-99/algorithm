@@ -1,4 +1,4 @@
-package java_coding.data_structure.binary_search;
+package java_coding.binary_search;
 
 import java.io.*;
 import java.util.*;

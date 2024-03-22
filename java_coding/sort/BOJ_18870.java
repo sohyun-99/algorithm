@@ -1,4 +1,4 @@
-package java_coding.data_structure.sort;
+package java_coding.sort;
 
 import java.io.*;
 import java.util.*;
