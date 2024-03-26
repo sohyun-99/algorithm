@@ -21,10 +21,36 @@ public class syntax {
         ArrayList<Integer> copy_arrlist1 = new ArrayList<Integer>();
         copy_arrlist1.addAll(arrlist1);
 
+        arrlist1.add(2);
+        arrlist1.set(1,3);
+        arrlist1.remove(1);
+
+        arrlist1.contains(3); // true false
+        arrlist1.indexOf(3); // 존재하면 인덱스를 리턴하고 없으면 -1을 반환
+ 
         // arrayList 정렬
         arrlist1.sort(null);
         arrlist1.size();
+
+        Iterator it = arrlist1.iterator();
+        while(it.hasNext()){
+            it.next();
+            // ...
+        }
+
+        // 7. 중복없이 값을 넣고 싶을 때
+        if (arrlist1.indexOf(4) < 0) {	// 없으면 -1을 리턴하기 때문에
+            arrlist1.add(4);
+        }
+
+        // 8. 리스트 값 하나씩 가져올 때 (int 일 경우)
+        for(int i = 0; i < arrlist1.size(); i++) {
+            arrlist1.get(i).intValue();
+        }
+
+
     }
+
 
     /* List */
     public static void list(){
@@ -142,6 +168,7 @@ public class syntax {
         set.contains(1); // true or false
     }
 
+    /* String */
     public static void String(){
         String str1 = "goodssssss";
         String[] strArr1=str1.split(" "); // 공백을 기준으로 분할
@@ -152,16 +179,11 @@ public class syntax {
 
         String[] strArr2=str1.split(""); // str을 array로 변경
 
-        str1 = str1.toUpperCase();
-        str1 = str1.toLowerCase();
+        str1 = str1.toUpperCase(); // 대문자로
+        str1 = str1.toLowerCase(); // 소문자로
 
         // 한번 선언한 문자열은 변경이 불가하다 + 추가하고 싶다면 substring활용하여 새로운 변수로 선언
         String str2 = str1.substring(0,4) + "is" + str1.substring(4);
-
-        System.out.println(str2); // 한글자씩 분할하여 출력
-
-
-        
     }
 }
 
