@@ -1,24 +1,59 @@
 package java_coding.basic.summary;
 
+// 라이브러리 선언
 import java.io.*;
 import java.util.*;
 
 public class syntax {
+
+    public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
     public static void main(String[] args) throws IOException{
+        System.out.println("coding test");
+        
+        String();
+    }
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        /* arraylist */
-
+    /* arraylist */
+    public static void arrayList(){
         // arraylist 복사
         ArrayList<Integer> arrlist1 = new ArrayList<Integer>();
         ArrayList<Integer> copy_arrlist1 = new ArrayList<Integer>();
         copy_arrlist1.addAll(arrlist1);
 
+        arrlist1.add(2);
+        arrlist1.set(1,3);
+        arrlist1.remove(1);
+
+        arrlist1.contains(3); // true false
+        arrlist1.indexOf(3); // 존재하면 인덱스를 리턴하고 없으면 -1을 반환
+ 
         // arrayList 정렬
         arrlist1.sort(null);
+        arrlist1.size();
 
-        /* List */
+        Iterator it = arrlist1.iterator();
+        while(it.hasNext()){
+            it.next();
+            // ...
+        }
+
+        // 7. 중복없이 값을 넣고 싶을 때
+        if (arrlist1.indexOf(4) < 0) {	// 없으면 -1을 리턴하기 때문에
+            arrlist1.add(4);
+        }
+
+        // 8. 리스트 값 하나씩 가져올 때 (int 일 경우)
+        for(int i = 0; i < arrlist1.size(); i++) {
+            arrlist1.get(i).intValue();
+        }
+
+
+    }
+
+
+    /* List */
+    public static void list(){
 
         // set을 list로 변경
         Set<String> set1 = new HashSet<String>();
@@ -35,13 +70,19 @@ public class syntax {
         list2.remove(list2.size()-1); // 마지막 요소 삭제
         
         //List 크기 <- arraylist도 list이므로 같음
-        arrlist1.size();
-        
-        /* array */
-        
+        list1.size();
+    }
+    
+    /* array */
+    public static void array() throws IOException {
         // array sort
         int[] arr1 = new int[5];
+        Integer[] arr3 = new Integer[5];
+
+
         Arrays.sort(arr1);
+        Arrays.sort(arr3,Collections.reverseOrder());
+        Arrays.sort(arr1,0,4);
 
         // array length
         int length = arr1.length;
@@ -65,9 +106,13 @@ public class syntax {
         //초기값을 false로 초기화
         Boolean arr [] = new Boolean[10];
         Arrays.fill(arr,false); 
-        
 
-        /* set */
+        List list1 = Arrays.asList(arr);
+        int[] arr4 = Arrays.copyOfRange(arr1,0,1);
+    }
+ 
+    /* set , map */
+    public static void SetAndMap(){
 
         //set 값 넣기 삭제 크기
         Set<String> set2 = new HashSet<String>();
@@ -81,7 +126,7 @@ public class syntax {
             System.out.println(iter1.next()); 
         }
 
-        /* map */
+         /* map */
 
         // map 삽입 가져오기 크기
         Map<String,Integer> map1 = new HashMap<>();
@@ -121,11 +166,26 @@ public class syntax {
         set.add(1);
         set.remove(1);
         set.contains(1); // true or false
-    
     }
 
-    
-    
+    /* String */
+    public static void String(){
+        String str1 = "goodssssss";
+        String[] strArr1=str1.split(" "); // 공백을 기준으로 분할
+        str1.substring(0,5); // 이 구간만 자른다
+        for(int i=0;i<str1.length();i++){
+            System.out.println(str1.charAt(i)); // 한글자씩 분할하여 출력
+        }
+
+        String[] strArr2=str1.split(""); // str을 array로 변경
+
+        str1 = str1.toUpperCase(); // 대문자로
+        str1 = str1.toLowerCase(); // 소문자로
+
+        // 한번 선언한 문자열은 변경이 불가하다 + 추가하고 싶다면 substring활용하여 새로운 변수로 선언
+        String str2 = str1.substring(0,4) + "is" + str1.substring(4);
+    }
 }
 
 //참고 : https://gwang920.github.io/java/Java-condingGrammer/
+//https://velog.io/@ryusuz/JAVA-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9A%A9-%EC%A3%BC%EC%9A%94-%ED%95%A8%EC%88%98-%EB%AA%A8%EC%9D%8C
