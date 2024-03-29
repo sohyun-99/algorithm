@@ -7,11 +7,11 @@ import java.util.*;
 //이분그래프
 public class BOJ_1707 {
 
-    public static Boolean[] visited;
+    public static int[] visited;
     public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
 
-    public static ArrayList<Integer> left;
-    public static ArrayList<Integer> right;
+    // public static ArrayList<Integer> left = new ArrayList<Integer>();
+    // public static ArrayList<Integer> right = new ArrayList<Integer>();
 
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -23,7 +23,7 @@ public class BOJ_1707 {
         int E= Integer.parseInt(st.nextToken());
 
 
-        visited = new Boolean[V];
+        visited = new int[V];
         
         
         for(int i=0;i<V;i++){
@@ -45,10 +45,18 @@ public class BOJ_1707 {
 
     public static void dfs(int n){
 
-        visited[n] = true ;
+        visited[n] = 1 ;
+        
 
         for(int i=0;i<graph.get(n).size();i++){
             
+            int c = graph.get(n).get(i);
+
+            if(visited[c]==0){
+                visited[c]=-1;
+                dfs(c);
+            }
+
         }
 
     }
