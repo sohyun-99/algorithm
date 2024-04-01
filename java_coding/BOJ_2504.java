@@ -27,9 +27,11 @@ public class BOJ_2504 {
                     tmp*=3;
                 }
                 else if((strArr[i].equals(")"))){
-                    if(stack.peek().equals("(")){
-                        System.out.println("answer ="+ answer + "tmp = " +tmp );
-
+                    if(stack.isEmpty() || !stack.peek().equals("(")){
+                        answer=0;
+                        break; 
+                    }
+                    else{
                         if(strArr[i-1].equals("(")){
                             answer+=tmp;
                         }
@@ -37,27 +39,21 @@ public class BOJ_2504 {
                         
                         tmp /= 2;
                     }
-                    else{
-                        break; // 짝을 이루지 않는 경우라 예외처리
-                    }
                 }
                 else if((strArr[i].equals("]"))){
-                    if(stack.peek().equals("[")){
-                        stack.pop();
-                        System.out.println("answer ="+ answer + "tmp = " +tmp );
-
+                    if(stack.isEmpty() || !stack.peek().equals("[")){
+                        answer = 0;
+                        break; 
+                    }
+                    else{
                         if(strArr[i-1].equals("[")){
                             answer+=tmp;
                         }
+                        stack.pop();
                         
                         tmp /= 3;
                     }
-                    else{
-                        break; // 짝을 이루지 않는 경우라 예외처리
-                    }
                 }
-
-
             }
 
         if(!stack.isEmpty()) System.out.println(0);
