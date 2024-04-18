@@ -3,6 +3,7 @@ package java_coding;
 import java.io.*;
 import java.util.*;
 
+// 이진수 (이진수 대표 유형)
 public class BOJ_3460 {
     public static void main (String[] args) throws IOException{
         Scanner sc = new Scanner(System.in);

@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 
-// 약수 구하기
+// 약수 구하기 
 public class BOJ_2501 {
 
     public static void main (String[] args) throws IOException{
